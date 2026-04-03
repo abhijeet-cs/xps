@@ -1,0 +1,8 @@
+✨ Using Cosmos, tests can be configured in two ways: after_each or after_all
+https://astronomer.github.io/astronomer-cosmos/guides/translate_dbt_to_airflow/testing-behavior.html
+🚀 If after_each is enabled, Cosmos executes tests twice. The should_detach_multiple_parents_tests option can reduce duplicate dependencies.
+⚠️ However, it does not guarantee that all downstream models start only after every upstream model test has completed.
+
+📦 To store test results in a specific location on worker nodes when using Airflow with DbtTestLocalOperator, configure:
+dbt_cmd_flags=['--target-path', '<temp_path>']
+This directs dbt to write test artifacts to the specified temporary path.
