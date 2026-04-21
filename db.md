@@ -1,5 +1,5 @@
 ## SQL Execution Order Mnemonic
-**F W G H S D O L** 🧠
+🧠 **F W G H S D O L** 
 
 Pronounce as:
 **Few Good Hackers Select Data Ordered Logically**
