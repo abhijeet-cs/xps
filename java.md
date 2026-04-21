@@ -1,21 +1,8 @@
 # ConcurrentModificationException in ArrayList
-
 ### Cause
-Occurs when an `ArrayList` is **structurally modified during iteration**.
-Examples:
-- `add()`
-- `remove()`
-- `clear()`
-
-Iterator detects change via internal `modCount` and throws exception. 
-
-## Reason
-Multiple threads modifying same list or same thread modifying during iteration.
-```java
-for (String s : list) {
-    list.remove(s);
-}
-```
+Occurs when an `ArrayList` is **structurally modified during iteration** or **Multiple threads modifying same list**.
+### How does it detect ?
+Iterator detects change via internal `modCount` (count of structural modifications made to the collection) and throws exception. 
 
 ## Fixes
 1. Use Iterator.remove()
