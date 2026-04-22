@@ -46,8 +46,8 @@ hash(_id) % number_of_primary_shards
 Since primary shard count is fixed, shard location can always be identified.
 Every node keeps a copy of cluster state, which maps shards to physical nodes.
 
-
-🔤 String Field Types
+---
+## 🔤 String Field Types
 1. Text
 - Stored as an inverted index:
 - token → list of document IDs
