@@ -1,10 +1,5 @@
-## SQL Execution Order Mnemonic
-🧠 **F W G H S D O L** 
+## 🧠 SQL Execution Order Mnemonic
 
-Pronounce as:
-**Few Good Hackers Select Data Ordered Logically**
-
-### Meaning
 - **F** = `FROM / JOIN` → choose tables and combine data  
 - **W** = `WHERE` → remove unwanted rows early  
 - **G** = `GROUP BY` → create groups  
